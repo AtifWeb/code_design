@@ -1,38 +1,654 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.splide__arrows {
+  display: none !important;
+}
+.splide__pagination__page {
+  height: 8px !important;
+  width: 8px !important;
+  border-radius: 50% !important;
+  background-color: rgb(232, 72, 136) !important;
+  opacity: 0.3;
+}
+.splide__pagination__page.is-active {
+  opacity: 1;
+}
+.dOcKIQ {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+.common_width {
+  width: 1300px;
+  margin: 0rem auto;
+}
+
+nav,
+ul {
+  list-style: none;
+}
+header {
+  height: 130px;
+  justify-content: space-between;
+  font-family: Impact, Anton, sans-serif;
+}
+header,
+header > div {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9f7f7;
+}
+header .logo h1 {
+  color: #fb006e;
+  font-size: 53px;
+}
+header a {
+  font-weight: 700;
+  text-transform: uppercase;
+
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-family: Impact, Anton, sans-serif;
+  transition: color 0.3s ease 0s;
+  color: #5f5f5f;
+}
+
+header a.active,
+header a:hover {
+  color: #fb006e;
+}
+header > div > * + * {
+  margin-left: 1.2rem;
+}
+header a img,
+footer .follow a img {
+  height: 1.8rem;
+}
+header div a:not(:first-child, :nth-child(2)) img,
+footer .follow a:not(:first-child, :nth-child(2)) img {
+  height: 2.1rem;
+}
+footer .follow > div {
+  margin-top: 1rem;
+}
+footer .follow > div > * + * {
+  margin-left: 10px;
+}
+/* main */
+main {
+  padding: 8rem 0rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main h1 {
+  color: #fb006e;
+  text-transform: uppercase;
+  font-family: Impact, Anton, sans-serif;
+  font-size: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main h1 img {
+  width: 100px;
+  margin-left: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main .presentation {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+main .presentation p,
+.feature_artist > p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+main .presentation a {
+  background-color: #fb006e;
+  color: #fff;
+  width: 250px;
+  height: 70px;
+  display: flex;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-weight: 800;
+}
+.girl_area {
+  position: relative;
+  margin-bottom: 5rem;
+}
+.girl_area::after {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0px;
+  height: 150px;
+  background: linear-gradient(to bottom, transparent, #f9f7f7);
+  content: "";
+  z-index: 9;
+}
+.girl_area img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.girl_area > h1 {
+  text-transform: uppercase;
+  font-family: Impact, Anton, sans-serif;
+  font-size: 23rem;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  color: #fb006e;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-link {
-  color: #61dafb;
+.our_story {
+  padding: 8rem 0rem;
+}
+.our_story > h1 {
+  color: #fb006e;
+  text-transform: uppercase;
+  font-family: Impact, Anton, sans-serif;
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.our_story > p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.girls_grid_area {
+  padding-top: 5rem;
+  padding-bottom: 9rem;
+}
+.girls_grid_area > * {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.girls_grid_area img {
+  width: 100%;
+}
+
+/* artist_wrapper */
+.artist_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  align-items: center;
+  grid-gap: 3rem;
+  padding: 10rem 0rem;
+}
+.artist_wrapper > img {
+  width: 100%;
+}
+.artist_wrapper .social_wrapper {
+  display: flex;
+  align-items: center;
+}
+.artist_wrapper .social_wrapper > * + * {
+  margin-left: 0.7rem;
+}
+.artist_wrapper .social_wrapper img {
+  height: 32px;
+}
+/* team_area */
+.team_area,
+.feature_artist {
+  padding: 6rem 0rem;
+}
+.team_area > h1,
+.artist_wrapper h1,
+.road_map > h1,
+.feature_artist > h1 {
+  color: #fb006e;
+  text-transform: uppercase;
+  font-family: Impact, Anton, sans-serif;
+  font-size: 4.8rem;
+
+  margin-bottom: 1rem;
+}
+.team_area > p,
+.artist_wrapper p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.team_area .content_area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 4rem;
+}
+.team_area .content_area .card > img {
+  width: 100%;
+}
+.team_area .content_area .card > h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1.4rem;
+}
+.team_area .content_area .card > p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5f5f5f;
+  margin-top: 0.6rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.team_area .content_area .card .social_area {
+  display: flex;
+  align-items: center;
+}
+.team_area .content_area .card .social_area > * + * {
+  margin-left: 0.8rem;
+}
+
+/* INSPIRATION_Wrapper */
+.INSPIRATION_Wrapper {
+  grid-template-columns: 1fr 1fr;
+  /* padding-top: 6rem; */
+}
+.INSPIRATION_Wrapper .img_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.INSPIRATION_Wrapper .img_grid img {
+  width: 100%;
+}
+
+.road_map {
+  padding: 8rem 0rem;
+}
+.road_map > h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.road_map .list_wrapper {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.road_map .list_wrapper > h1 {
+  color: #fb006e;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 5rem;
+}
+.road_map .list_wrapper li,
+.feature_artist > ul li {
+  font-weight: 500;
+  color: #181818;
+  font-size: 1.5rem;
+  margin-top: 0.6rem;
+  margin-left: 3rem;
+  position: relative;
+  list-style: disc;
+}
+.road_map .list_wrapper > h1::after {
+  position: absolute;
+  background: url("https://killergf.com/static/media/pink-heart.065abc6c.svg");
+  background-size: 100%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  width: 50px;
+  left: 0;
+  top: -10px;
+
+  height: 3.5rem;
+
+  content: "";
+  z-index: 9;
+}
+.road_map .list_wrapper > ul {
+  padding-left: 5rem;
+}
+
+.road_map .list_wrapper > ul > * + * {
+  margin-top: 2rem;
+}
+.road_map .list_wrapper + .list_wrapper {
+  margin-top: 3rem;
+}
+
+.feature_artist .card {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  margin-top: 2rem;
+}
+.feature_artist ul {
+  list-style: none;
+}
+.feature_artist .card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature_artist .card .right_side {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.feature_artist .card .right_side .presentation {
+  background: rgb(249, 247, 247);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+.feature_artist .card .right_side .presentation h1 {
+  font-family: Impact, Anton, sans-serif;
+  color: rgb(231, 73, 136);
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.feature_artist .card .right_side .presentation p {
+  color: black;
+  font-weight: 600;
+  text-align: left;
+  font-size: 1.2rem;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Impact, Anton, sans-serif;
+  padding-bottom: 2rem;
+}
+footer .form_area > h1,
+footer .follow > h1 {
+  font-size: 25px;
+}
+footer .form_area .input_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+footer .form_area .input_wrapper input {
+  height: 50px;
+  width: 350px;
+
+  background: white;
+  border-radius: 10px;
+  padding: 0px 1rem;
+  font-size: 15px;
+
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgb(210, 210, 210);
+}
+footer .form_area .input_wrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background-color: #fb006e;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+footer .logo_footer {
+  color: #fb006e;
+  font-size: 45px;
+}
+@media screen and (max-width: 1350px) {
+  .common_width {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  main .presentation {
+    width: 100%;
+  }
+  main .presentation p {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  header > .social_icons {
+    display: none;
+  }
+  .girl_area > h1 {
+    font-size: 18rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .feature_artist .card {
+    grid-template-columns: 1fr;
+  }
+
+  .splide {
+    padding: 0px !important;
+  }
+  .feature_artist .card .right_side .presentation {
+    width: 100%;
+  }
+  .girls_grid_area > *,
+  .road_map .list_wrapper {
+    width: 100%;
+  }
+  .artist_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .team_area .content_area {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer > * + * {
+    margin-top: 2rem;
+  }
+  footer .form_area > h1,
+  footer .follow > h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  header > .nav {
+    position: fixed;
+    flex-direction: column;
+    background-color: #f9f7f7;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    padding: 3rem 2rem;
+    width: 189px;
+    transition: 0.3s ease all;
+    z-index: 9999999999;
+  }
+  header > .nav.active_nav {
+    left: 0px;
+  }
+  header > div > * + * {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  header a {
+    font-size: 1.5rem;
+  }
+  .dOcKIQ {
+    display: flex;
+    position: relative;
+    background: transparent;
+    border: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1.5rem;
+    width: 2.2rem;
+    z-index: 2;
+  }
+  .cyFoiY {
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #181818;
+    transition: all 0.3s ease 0s;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 800px) {
+  .team_area .content_area {
+    grid-template-columns: 1fr 1fr;
+  }
+  .girl_area > h1 {
+    font-size: 10rem;
+  }
+  main h1 img {
+    display: none;
+  }
+  main .presentation p {
+    width: 100%;
+  }
+  main h1 {
+    font-size: 3.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .team_area > h1,
+  .artist_wrapper h1,
+  .road_map > h1,
+  .our_story > h1,
+  .feature_artist > h1 {
+    font-size: 3rem;
+  }
+  .road_map .list_wrapper > h1,
+  .feature_artist .card .right_side .presentation h1 {
+    font-size: 1.4rem;
+  }
+  .feature_artist .card .right_side .presentation h1 {
+    text-align: left;
+  }
+  .road_map .list_wrapper li,
+  .our_story > p,
+  main .presentation p,
+  .team_area > p,
+  .artist_wrapper p,
+  .feature_artist .card .right_side .presentation p,
+  .feature_artist > p,
+  .feature_artist > ul li {
+    font-size: 15px;
+  }
+  header .logo h1 {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .girl_area > h1 {
+    font-size: 5rem;
+  }
+  .team_area > h1,
+  .artist_wrapper h1,
+  .road_map > h1,
+  .our_story > h1,
+  .feature_artist > h1 {
+    font-size: 2.5rem;
+  }
+  .road_map .list_wrapper > h1 {
+    font-size: 1rem;
+  }
+  .road_map .list_wrapper > ul {
+    padding-left: 1rem;
+  }
+  .road_map .list_wrapper > h1::after {
+    width: 30px;
+    top: -20px;
+  }
+  .road_map .list_wrapper > h1 {
+    padding-left: 3rem;
+  }
+  .team_area .content_area .card > h1 {
+    font-size: 15px;
+  }
+  .team_area .content_area .card > p {
+    font-size: 14px;
+  }
+  footer .form_area .input_wrapper {
+    flex-direction: column;
+  }
+  footer .form_area .input_wrapper > * {
+    min-width: 100%;
+  }
+  footer .form_area .input_wrapper button {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .INSPIRATION_Wrapper .img_grid {
+    grid-gap: 10px;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+  main .presentation a {
+    background-color: #fb006e;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 800;
+  }
+
+  /* gapping */
+  .girls_grid_area {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .road_map,
+  .artist_wrapper {
+    padding-bottom: 0px;
+  }
+  .artist_wrapper {
+    padding-top: 0px;
+  }
+  .artist_wrapper {
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .team_area .content_area {
+    grid-template-columns: 1fr;
   }
 }
