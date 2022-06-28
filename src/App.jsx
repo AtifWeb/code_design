@@ -31,39 +31,22 @@ function App() {
         </div>
 
         <div className="social_icons">
-          <a href="#">
+          <a href="https://opensea.io/" target="_blank">
             <img
               src="https://killergf.com/static/media/opensea.6abe1a0d.svg"
               alt=""
             />
           </a>
-          <a href="#">
-            <img
-              src="https://killergf.com/static/media/etherscan.c3eda4ea.svg"
-              alt=""
-            />
-          </a>
-          <a href="#">
+
+          <a href="https://twitter.com/AzukiGFNFT" target="_blank">
             <img
               src="https://killergf.com/static/media/twitter.7fab2aad.svg"
               alt=""
             />
           </a>
-          <a href="#">
+          <a href="https://discord.com/" target="_blank">
             <img
               src="https://killergf.com/static/media/discord.86fc4dc5.svg"
-              alt=""
-            />
-          </a>
-          <a href="#">
-            <img
-              src="https://killergf.com/static/media/medium.432a7632.svg"
-              alt=""
-            />
-          </a>
-          <a href="#">
-            <img
-              src="https://killergf.com/static/media/instagram.cf116282.svg"
               alt=""
             />
           </a>
@@ -80,29 +63,19 @@ function App() {
       </header>
 
       <main className="common_width">
+        <img src="https://killergf.com/static/media/04.9b77a788.png" alt="" />
         <div className="presentation">
-          <h1>
-            welcome to Azuki gf
-            <img
-              src="https://killergf.com/static/media/love-kills.9bacf7d9.png"
-              alt=""
-            />
-          </h1>
-          <p>
-            Azuki GF is a 7,777 generative portrait art collection by a former
-            Riot Games Artist, Zeronis, with over 240 meticulously designed
-            features that contrasts cute and aesthetically appealing girlfriends
-            that also happen to be dangerous assassins.
-          </p>
+          <h1>Mint 2 Azuki GF and Get 1 Free Your Azuki GF</h1>
+          <h1> can’t wait to meet you</h1>
 
-          <a href="#">View on OpenSea </a>
+          <a href="#">Connect Wallet</a>
         </div>
       </main>
 
-      <section className="girl_area common_width">
+      {/* <section className="girl_area common_width">
         <h1>Azuki GF</h1>
         <img src="https://killergf.com/static/media/04.9b77a788.png" alt="" />
-      </section>
+      </section> */}
 
       <section className="our_story common_width">
         <h1>THE STORY</h1>
@@ -167,16 +140,7 @@ function App() {
           <h1>ART AIRDROPS & HOLDER REWARDS</h1>
           <ul>
             <li>
-              Monthly KGF Stamp art airdrops to all AZUKI GF holders - KILLED
-              IT! ONGOING
-            </li>
-            <li>
-              KGF Stamps are non-transferable, and can be used to detect past,
-              current, and diamond-handed holders
-            </li>
-            <li>
-              Zeronis Legacy 1/1 Art airdrops for long-term holders - KILLED IT!
-              ONGOING
+              Zeronis Legacy 1/1 Art airdrops for long-term holders - ONGOING
             </li>
 
             <li>
@@ -190,7 +154,7 @@ function App() {
         </div>
 
         <div className="list_wrapper">
-          <h1>KGF CHARITY AUCTIONS</h1>
+          <h1>AZUKI GF CHARITY</h1>
           <ul>
             <li>
               Monthly collab charity auctions on Foundation with guest artists
@@ -198,19 +162,17 @@ function App() {
             <li>
               15+ eth donated from guest artist auctions so far - KILLED IT!
             </li>
-            <li>
-              Active KGF holders receive a KGF CHARITY stamp gift drawn by the
-              guest artist - COMING IN JUNE
-            </li>
           </ul>
         </div>
 
         <div className="list_wrapper">
-          <h1>KILLER MERCH</h1>
+          <h1>AZUKI GF MERCH</h1>
           <ul>
             <li>High quality merchandise exclusively for AZUKI GF holders</li>
-            <li>Merch store available to all KGF Holders all over the world</li>
-            <li>First IRL Airdrop: KGF PILLOWS - KILLED IT!</li>
+            <li>
+              Merch store available to all Azuki GF Holders all over the world
+            </li>
+
             <li>Hoodies, shirts, and other items - IN THE WORKS</li>
             <li>Future IRL Airdrops and Merch - EXPLORING</li>
           </ul>
@@ -220,10 +182,10 @@ function App() {
           <h1>METAVERSE AZUKI GFS</h1>
           <ul>
             <li>
-              WorldwideWebb3 Metaverse integration for every KGF - PENDING
-              INTEGRATION
+              Worldwide Web3 Metaverse Integration for every Azuki GF -
+              Exploring
             </li>
-            <li>Additional WorldwideWebb3 Integrations - EXPLORING</li>
+            <li>Additional Worldwide Web3 Integrations - EXPLORING</li>
             <li>Integration into other Metaverses - EXPLORING</li>
           </ul>
         </div>
@@ -249,12 +211,12 @@ function App() {
       <section className="feature_artist common_width">
         <h1>FEATURE ARTISTS</h1>
         <p>
-          A Foundation collection where each artist made a KGF derivative in
-          their own style. The 1/1s were sold on Foundation for auction with the
-          proceeds going to the following split:
+          A Foundation collection where each artist made a Azuki GF derivative
+          in their own style. The 1/1s were sold on Foundation for auction with
+          the proceeds going to the following split:
         </p>
         <ul>
-          <li>- 33% to KGF Team</li>
+          <li>- 33% Azuki GF Team</li>
           <li>- 33% to the Artist</li>
           <li>- 33% toCharity (Artists pick!)</li>
         </ul>
@@ -379,14 +341,14 @@ function App() {
       <section className="team_area common_width">
         <h1>TEAM</h1>
         <p>
-          uwulabs is the talented team of builders behind the uwucrew - an
-          anime-inspired NFT project with a fun art focused community!
+          Azuki GF is a talented team of builders behind Azuki GF Crew - an
+          inspired NFT Project with a fun art focused community.
         </p>
-        <p>
+        {/* <p>
           We have collaborated with Zeronis to assist in development and
           community management for AZUKI GF. We are excited to work with Zeronis
           and are looking forward to AZUKI GF's future!
-        </p>
+        </p> */}
         <div className="content_area">
           <Card
             img="https://killergf.com/static/media/kiwi.a697b0a6.jpg"
@@ -460,39 +422,22 @@ function App() {
           <h1>FOLLOW US</h1>
 
           <div className="social_icons">
-            <a href="#">
+            <a href="https://opensea.io/" target="_blank">
               <img
                 src="https://killergf.com/static/media/opensea.6abe1a0d.svg"
                 alt=""
               />
             </a>
-            <a href="#">
-              <img
-                src="https://killergf.com/static/media/etherscan.c3eda4ea.svg"
-                alt=""
-              />
-            </a>
-            <a href="#">
+
+            <a href="https://twitter.com/AzukiGFNFT" target="_blank">
               <img
                 src="https://killergf.com/static/media/twitter.7fab2aad.svg"
                 alt=""
               />
             </a>
-            <a href="#">
+            <a href="https://discord.com/" target="_blank">
               <img
                 src="https://killergf.com/static/media/discord.86fc4dc5.svg"
-                alt=""
-              />
-            </a>
-            <a href="#">
-              <img
-                src="https://killergf.com/static/media/medium.432a7632.svg"
-                alt=""
-              />
-            </a>
-            <a href="#">
-              <img
-                src="https://killergf.com/static/media/instagram.cf116282.svg"
                 alt=""
               />
             </a>

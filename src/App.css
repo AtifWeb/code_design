@@ -88,13 +88,18 @@ footer .follow > div > * + * {
 /* main */
 main {
   padding: 8rem 0rem;
-  text-align: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main > img {
+  width: 100%;
 }
 main h1 {
   color: #fb006e;
   text-transform: uppercase;
   font-family: Impact, Anton, sans-serif;
-  font-size: 4.8rem;
+  font-size: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,12 +109,12 @@ main h1 img {
   margin-left: 20px;
 }
 main .presentation {
-  width: 65%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 main .presentation p,
@@ -122,14 +127,15 @@ main .presentation p,
 main .presentation a {
   background-color: #fb006e;
   color: #fff;
-  width: 250px;
-  height: 70px;
+  width: 200px;
+  height: 60px;
   display: flex;
   font-size: 17px;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 10px;
   font-weight: 800;
+  margin-top: 2rem;
 }
 .girl_area {
   position: relative;
