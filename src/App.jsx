@@ -10,6 +10,13 @@ import "@splidejs/react-splide/css/sea-green";
 
 // or only core styles
 import "@splidejs/react-splide/css/core";
+
+import discord from "./img/discord.svg";
+import opensea from "./img/opensea.svg";
+import twitter from "./img/twitter.svg";
+import insta from "./img/insta.svg";
+import foundation from "./img/foundation.svg";
+
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 function App() {
   const [AsideActive, setAsideActive] = useState(false);
@@ -32,23 +39,14 @@ function App() {
 
         <div className="social_icons">
           <a href="https://opensea.io/" target="_blank">
-            <img
-              src="https://killergf.com/static/media/opensea.6abe1a0d.svg"
-              alt=""
-            />
+            <img src={opensea} alt="" />
           </a>
 
           <a href="https://twitter.com/AzukiGFNFT" target="_blank">
-            <img
-              src="https://killergf.com/static/media/twitter.7fab2aad.svg"
-              alt=""
-            />
+            <img src={twitter} alt="" />
           </a>
           <a href="https://discord.com/" target="_blank">
-            <img
-              src="https://killergf.com/static/media/discord.86fc4dc5.svg"
-              alt=""
-            />
+            <img src={discord} alt="" />
           </a>
         </div>
 
@@ -285,30 +283,14 @@ function App() {
 
           <div className="social_wrapper">
             <a href="#">
-              <img
-                src="https://killergf.com/static/media/instagram.cf116282.svg"
-                alt=""
-              />
+              <img src={insta} alt="" />
             </a>
             <a href="#">
-              <img
-                src="https://killergf.com/static/media/twitter.7fab2aad.svg"
-                alt=""
-              />
+              <img src={twitter} alt="" />
             </a>
 
             <a href="#">
-              <img
-                src="https://killergf.com/static/media/artstation.926b5449.svg"
-                alt=""
-              />
-            </a>
-
-            <a href="#">
-              <img
-                src="https://killergf.com/static/media/foundation.ffb3bbcf.svg"
-                alt=""
-              />
+              <img src={foundation} alt="" />
             </a>
           </div>
         </div>
@@ -373,7 +355,7 @@ function App() {
             para="Kiwi's #1 fan. As project manager he makes sure everyone is doing their job and that we are fulfilling expectations."
           />
           <Card
-            img="https://killergf.com/static/media/tyler.6314ff9b.jpg"
+            img="https://killergf.com/static/media/kiwi.a697b0a6.jpg"
             heading="TylerTakesATrip - Assistant Community Manager"
             para="While in remission in July of 2021, he found an interest in crypto/NFTs and works full time as our Assistant Community Manager."
           />
@@ -394,7 +376,7 @@ function App() {
             para="Website developer for AZUKI GF. Working to make sure everything is looking Killer online."
           />
           <Card
-            img="https://killergf.com/static/media/sandwich.4e7b0bdf.jpg"
+            img="https://killergf.com/static/media/kiwi.a697b0a6.jpg"
             heading="Chicken Sandwich - Twitch Organizer"
             para="Organizes League of Legends and other large game events for our Twitch."
           />
@@ -423,23 +405,14 @@ function App() {
 
           <div className="social_icons">
             <a href="https://opensea.io/" target="_blank">
-              <img
-                src="https://killergf.com/static/media/opensea.6abe1a0d.svg"
-                alt=""
-              />
+              <img src={opensea} alt="" />
             </a>
 
             <a href="https://twitter.com/AzukiGFNFT" target="_blank">
-              <img
-                src="https://killergf.com/static/media/twitter.7fab2aad.svg"
-                alt=""
-              />
+              <img src={twitter} alt="" />
             </a>
             <a href="https://discord.com/" target="_blank">
-              <img
-                src="https://killergf.com/static/media/discord.86fc4dc5.svg"
-                alt=""
-              />
+              <img src={discord} alt="" />
             </a>
           </div>
         </div>

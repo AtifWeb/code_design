@@ -1,5 +1,6 @@
 import React from "react";
-
+import twitter from "../img/twitter.svg";
+import github from "../img/github.svg";
 export const Card = ({ img, heading, para }) => {
   return (
     <div className="card">
@@ -9,16 +10,10 @@ export const Card = ({ img, heading, para }) => {
       <p>{para}</p>
       <div className="social_area">
         <a href="#">
-          <img
-            src="https://killergf.com/static/media/twitter.7fab2aad.svg"
-            alt=""
-          />
+          <img src={twitter} alt="" />
         </a>
         <a href="#">
-          <img
-            src="https://killergf.com/static/media/github.bb258a18.svg"
-            alt=""
-          />
+          <img src={github} alt="" />
         </a>
       </div>
     </div>
