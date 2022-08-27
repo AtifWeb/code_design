@@ -364,27 +364,6 @@ function App() {
             heading="Desto - Partnerships Manager"
             para="Responsible for our relationships and collaborations with other projects."
           />
-
-          <Card
-            img="https://killergf.com/static/media/m.8b559463.jpg"
-            heading="Morello - Advisor"
-            para="Essential team member from uwucrew/uwulabs. He assists wherever needed."
-          />
-          <Card
-            img="https://killergf.com/static/media/chase.d9902eaf.jpg"
-            heading="Chase Manning - Developer"
-            para="Website developer for AZUKI GF. Working to make sure everything is looking Killer online."
-          />
-          <Card
-            img="https://killergf.com/static/media/kiwi.a697b0a6.jpg"
-            heading="Chicken Sandwich - Twitch Organizer"
-            para="Organizes League of Legends and other large game events for our Twitch."
-          />
-          <Card
-            img="https://killergf.com/static/media/peegu.7fb12b3f.jpg"
-            heading="Peegu - Chinese Community Manager"
-            para="Translates important announcements and stays in touch with our Chinese speaking community."
-          />
         </div>
       </section>
 

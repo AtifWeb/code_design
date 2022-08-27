@@ -251,7 +251,7 @@ main .presentation a {
 }
 .team_area .content_area {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
   margin-top: 4rem;
 }
@@ -503,7 +503,7 @@ footer .logo_footer {
     height: 100vh;
     top: 0;
     left: -100%;
-    padding: 3rem 2rem;
+    padding: 3rem 0rem;
     width: 189px;
     transition: 0.3s ease all;
     z-index: 9999999999;
@@ -516,7 +516,7 @@ footer .logo_footer {
     margin-top: 10px;
   }
   header a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .dOcKIQ {
     display: flex;
