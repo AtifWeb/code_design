@@ -38,13 +38,14 @@ function App() {
         </div>
 
         <div className="social_icons">
+          <a href="https://twitter.com/AzukiGFNFT" target="_blank">
+            <img src={twitter} alt="" />
+          </a>
+
           <a href="https://opensea.io/" target="_blank">
             <img src={opensea} alt="" />
           </a>
 
-          <a href="https://twitter.com/AzukiGFNFT" target="_blank">
-            <img src={twitter} alt="" />
-          </a>
           <a href="https://discord.com/" target="_blank">
             <img src={discord} alt="" />
           </a>
@@ -281,7 +282,7 @@ function App() {
             Web3 collecting game on the market.
           </p>
 
-          <div className="social_wrapper">
+          {/* <div className="social_wrapper">
             <a href="#">
               <img src={insta} alt="" />
             </a>
@@ -292,7 +293,7 @@ function App() {
             <a href="#">
               <img src={foundation} alt="" />
             </a>
-          </div>
+          </div> */}
         </div>
         <img
           src="https://killergf.com/static/media/artist.21ce5dd1.jpg"
@@ -371,10 +372,10 @@ function App() {
         <div className="form_area">
           <h1>JOIN THE CLUB</h1>
 
-          <div className="input_wrapper">
+          {/* <div className="input_wrapper">
             <input type="email" placeholder="Enter your email address" />
             <button>→</button>
-          </div>
+          </div> */}
         </div>
 
         <h1 className="logo_footer">AZUKI GF</h1>
@@ -383,13 +384,14 @@ function App() {
           <h1>FOLLOW US</h1>
 
           <div className="social_icons">
+            <a href="https://twitter.com/AzukiGFNFT" target="_blank">
+              <img src={twitter} alt="" />
+            </a>
+
             <a href="https://opensea.io/" target="_blank">
               <img src={opensea} alt="" />
             </a>
 
-            <a href="https://twitter.com/AzukiGFNFT" target="_blank">
-              <img src={twitter} alt="" />
-            </a>
             <a href="https://discord.com/" target="_blank">
               <img src={discord} alt="" />
             </a>
