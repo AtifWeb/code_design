@@ -454,7 +454,27 @@ footer .logo_footer {
 }
 @media screen and (max-width: 1250px) {
   header > .social_icons {
-    display: none;
+    /* display: none; */
+    margin-right: 10px;
+  }
+  header {
+    height: 100px !important;
+  }
+  header > .social_icons > * + * {
+    margin-top: 0px !important;
+    margin-left: 5px;
+  }
+  header > .social_icons img {
+    height: 1.6rem !important;
+  }
+  header > .social_icons a:nth-child(1) img {
+    height: 1.5rem !important;
+  }
+  header > .social_icons a:nth-child(2) img {
+    height: 1.3rem !important;
+  }
+  header > div.logo {
+    flex: 1;
   }
   .girl_area > h1 {
     font-size: 18rem;
