@@ -685,7 +685,13 @@ footer .logo_footer {
   .artist_wrapper {
     padding-bottom: 8rem;
   }
+  footer .follow > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
 @media screen and (max-width: 410px) {
   .team_area .content_area {
     grid-template-columns: 1fr;
