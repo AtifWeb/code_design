@@ -610,6 +610,11 @@ footer .logo_footer {
   header .logo h1 {
     font-size: 33px;
   }
+  footer .follow > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 450px) {
   .girl_area > h1 {
@@ -684,11 +689,6 @@ footer .logo_footer {
   }
   .artist_wrapper {
     padding-bottom: 8rem;
-  }
-  footer .follow > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 
